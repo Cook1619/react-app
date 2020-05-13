@@ -1,18 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import logo from "../mcook.png";
+import Navbar from './Navbar'
 import '../App.css'
 
-const Header = () => (
-  <div>
+const layoutStyle = {
+  margin: 20,
+  padding: 20,
+  border: '1px solid #DDD'
+}
+
+const Header = (props) => (
+  <div style={layoutStyle}>
     <header>
-      <img className="app-logo" src={logo} alt="logo" />
-      <h1>Dev Tips and Tricks</h1>
-      <NavLink to="/" exact={true}>
-        Home
-      </NavLink>
-      <NavLink to="/javascript">Javascript</NavLink>
-      <NavLink to="/css">CSS</NavLink>
+        <Navbar />
+        {props.children}
     </header>
   </div>
 );

@@ -1,0 +1,22 @@
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+}
+.sidenav a:hover {
+  background-color: whitesmoke;
+}
+.sidenav a:focus {
+  color: #6741a3;
+  background-color: whitesmoke;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
